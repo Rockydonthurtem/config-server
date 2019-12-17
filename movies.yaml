@@ -1,7 +1,8 @@
 spring:
   application:
    name: movies
-
+server:
+  port: 7890
    
 #eureka:
 #  client:
