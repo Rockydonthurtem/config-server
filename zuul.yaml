@@ -7,21 +7,16 @@ server:
   port: 9999
  #GET -> http://localhost:999/movies/api/v1.0/
  #configure routes with zuul.routes
-
 zuul:
   routes:
   #logical name for a service
     movies:
       path: /movies
-       #if no discovery, we have know where ap
+      #if no discovery, we have know where ap
       #url: http://localhost:8080/
-      
       #if you have discovery, Zuul asks Eureka for the URL
-    service-id: movies
-     
-      
-          
-       #remove whatever zuul.routes.movies.pat
-       #/movies/api/v1.0 -> /api/v1.0
+      service-id: movies    
+      #remove whatever zuul.routes.movies.pat
+      #/movies/api/v1.0 -> /api/v1.0
       strip-prefix: true #true by default
 
