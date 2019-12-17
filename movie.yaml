@@ -1,0 +1,8 @@
+spring:
+  application:
+   name: movies
+
+   
+#eureka:
+#  client:
+#    service-url: http://localhost:8761/

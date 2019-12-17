@@ -1,0 +1,13 @@
+#in PROD, you wil ahve at least 2 Eureka instances
+#at least 2 Eureka instances. by default Eureka tries to register w/ itself(other Eureka instances
+
+
+# netflix
+
+eureka:
+  client:
+    register-with-eureka: false
+    
+
+server:
+  port: 8761
